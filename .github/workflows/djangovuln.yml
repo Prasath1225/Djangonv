@@ -41,7 +41,12 @@ jobs:
         
         # Runs a single command using the runners shell
       - name: test job
-        run: echo 'true'
+        run: echo 'true' 
+        
+      - uses: actions/upload-artifact@v3
+        with:
+         name: django-output
+         path: djangovuln_results.json
         
         
    
