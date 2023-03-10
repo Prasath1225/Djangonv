@@ -34,7 +34,10 @@ jobs:
         run: pip install bandit
         
         # Runs a single command using the runners shell
-      - name: Running bandit
-        run: bandit -r ./
+      - name: Running bandit and json outout
+        run: bandit -r ./ -f json -o djangovuln_results.json
+        
+        
+   
 
       
