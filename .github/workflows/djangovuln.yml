@@ -38,6 +38,11 @@ jobs:
         run: bandit -r ./ -f json -o djangovuln_results.json
         
         
+        # Runs a single command using the runners shell
+      - name: test job
+        run: echo 'true'
+        
+        
    
 
       
