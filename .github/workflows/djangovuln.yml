@@ -54,7 +54,7 @@ jobs:
         
         # Runs a single command using the runners shell
       - name: Running Trufflehog for secret scan
-        run:  trufflehog3 -R
+        run:  trufflehog3 ./
          
        
     
