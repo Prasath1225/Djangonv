@@ -51,6 +51,10 @@ jobs:
          # Runs a single command using the runners shell
       - name: Installing Trufflehog for secret scan
         run:  pip install trufflehog3
+        
+        # Runs a single command using the runners shell
+      - name: Running Trufflehog for secret scan
+        run:  trufflehog3 -R ./
          
        
     
